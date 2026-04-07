@@ -10,8 +10,6 @@ struct EmptyPane: View {
     }
 }
 
-struct EmptyPane_Previews: PreviewProvider {
-    static var previews: some View {
-        EmptyPane()
-    }
+#Preview {
+    EmptyPane()
 }

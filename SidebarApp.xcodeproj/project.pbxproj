@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -33,14 +33,14 @@
 		4180AEF12839A0830054FEA9 /* Bundle+Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4180AEF02839A0830054FEA9 /* Bundle+Version.swift */; };
 		4180AEF32839A0950054FEA9 /* Bundle+Copyright.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4180AEF22839A0950054FEA9 /* Bundle+Copyright.swift */; };
 		4180AEF52839A1370054FEA9 /* NSWindow+AlwaysOnTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4180AEF42839A1370054FEA9 /* NSWindow+AlwaysOnTop.swift */; };
-		4180AEF92839A21F0054FEA9 /* AboutWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4180AEF82839A21F0054FEA9 /* AboutWindow.swift */; };
+
 		4180AEFB2839A32F0054FEA9 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4180AEFA2839A32F0054FEA9 /* AboutView.swift */; };
-		4180AEFE2839A3B30054FEA9 /* AttributionsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4180AEFD2839A3B30054FEA9 /* AttributionsWindow.swift */; };
+
 		4180AF022839A4BA0054FEA9 /* AttributionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4180AF012839A4BA0054FEA9 /* AttributionsView.swift */; };
 		4180AF052839A89A0054FEA9 /* DropTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4180AF042839A89A0054FEA9 /* DropTarget.swift */; };
 		4180AF072839AF320054FEA9 /* WindowReflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4180AF062839AF320054FEA9 /* WindowReflection.swift */; };
 		4180AF092839B0870054FEA9 /* AlwaysOnTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4180AF082839B0870054FEA9 /* AlwaysOnTop.swift */; };
-		4180AF0F283A50660054FEA9 /* MenuBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4180AF0E283A50660054FEA9 /* MenuBarButton.swift */; };
+
 		4180AF11283A50770054FEA9 /* MenuBarPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4180AF10283A50770054FEA9 /* MenuBarPopup.swift */; };
 /* End PBXBuildFile section */
 
@@ -73,14 +73,14 @@
 		4180AEF02839A0830054FEA9 /* Bundle+Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Version.swift"; sourceTree = "<group>"; };
 		4180AEF22839A0950054FEA9 /* Bundle+Copyright.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Copyright.swift"; sourceTree = "<group>"; };
 		4180AEF42839A1370054FEA9 /* NSWindow+AlwaysOnTop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSWindow+AlwaysOnTop.swift"; sourceTree = "<group>"; };
-		4180AEF82839A21F0054FEA9 /* AboutWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutWindow.swift; sourceTree = "<group>"; };
+
 		4180AEFA2839A32F0054FEA9 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
-		4180AEFD2839A3B30054FEA9 /* AttributionsWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributionsWindow.swift; sourceTree = "<group>"; };
+
 		4180AF012839A4BA0054FEA9 /* AttributionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributionsView.swift; sourceTree = "<group>"; };
 		4180AF042839A89A0054FEA9 /* DropTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropTarget.swift; sourceTree = "<group>"; };
 		4180AF062839AF320054FEA9 /* WindowReflection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowReflection.swift; sourceTree = "<group>"; };
 		4180AF082839B0870054FEA9 /* AlwaysOnTop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlwaysOnTop.swift; sourceTree = "<group>"; };
-		4180AF0E283A50660054FEA9 /* MenuBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarButton.swift; sourceTree = "<group>"; };
+
 		4180AF10283A50770054FEA9 /* MenuBarPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarPopup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -241,7 +241,6 @@
 			children = (
 				4180AEFC2839A3A80054FEA9 /* Attributions Window */,
 				4180AEEA2839A0280054FEA9 /* AboutCommand.swift */,
-				4180AEF82839A21F0054FEA9 /* AboutWindow.swift */,
 				4180AEFA2839A32F0054FEA9 /* AboutView.swift */,
 			);
 			path = "About Window";
@@ -250,7 +249,6 @@
 		4180AEFC2839A3A80054FEA9 /* Attributions Window */ = {
 			isa = PBXGroup;
 			children = (
-				4180AEFD2839A3B30054FEA9 /* AttributionsWindow.swift */,
 				4180AF012839A4BA0054FEA9 /* AttributionsView.swift */,
 			);
 			path = "Attributions Window";
@@ -268,7 +266,6 @@
 		4180AF0D283A504E0054FEA9 /* Menu Bar Button */ = {
 			isa = PBXGroup;
 			children = (
-				4180AF0E283A50660054FEA9 /* MenuBarButton.swift */,
 				4180AF10283A50770054FEA9 /* MenuBarPopup.swift */,
 			);
 			path = "Menu Bar Button";
@@ -301,8 +298,8 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1340;
-				LastUpgradeCheck = 1500;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					4180AEA92839753E0054FEA9 = {
 						CreatedOnToolsVersion = 13.4;
@@ -310,7 +307,7 @@
 				};
 			};
 			buildConfigurationList = 4180AEA52839753E0054FEA9 /* Build configuration list for PBXProject "SidebarApp" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 16.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -361,16 +358,16 @@
 				4180AF072839AF320054FEA9 /* WindowReflection.swift in Sources */,
 				4180AEC2283976F80054FEA9 /* GeneralSettingsView.swift in Sources */,
 				4180AEF52839A1370054FEA9 /* NSWindow+AlwaysOnTop.swift in Sources */,
-				4180AEF92839A21F0054FEA9 /* AboutWindow.swift in Sources */,
+
 				4180AEE128398F460054FEA9 /* PaneBackground.swift in Sources */,
 				4180AED7283980560054FEA9 /* MoreSidebarSection.swift in Sources */,
 				4180AEDE283985190054FEA9 /* MyExportDocument.swift in Sources */,
-				4180AF0F283A50660054FEA9 /* MenuBarButton.swift in Sources */,
+
 				4180AEF32839A0950054FEA9 /* Bundle+Copyright.swift in Sources */,
 				4180AED028397DB00054FEA9 /* MoreStuffPane.swift in Sources */,
 				4180AEC0283976740054FEA9 /* SettingsWindow.swift in Sources */,
 				4180AED9283983150054FEA9 /* SidebarFooter.swift in Sources */,
-				4180AEFE2839A3B30054FEA9 /* AttributionsWindow.swift in Sources */,
+
 				4180AEE728399E160054FEA9 /* MyCommands.swift in Sources */,
 				4180AEEB2839A0280054FEA9 /* AboutCommand.swift in Sources */,
 				4180AED228397F100054FEA9 /* GeneralSidebarSection.swift in Sources */,
@@ -435,7 +432,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -491,7 +488,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -520,13 +517,13 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.mac.SidebarApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -550,13 +547,13 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.mac.SidebarApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};

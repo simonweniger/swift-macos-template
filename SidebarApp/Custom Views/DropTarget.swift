@@ -2,9 +2,9 @@ import SwiftUI
 import UniformTypeIdentifiers
 
 struct DropTarget: View {
-    
+
     let delegate: DropDelegate
-    
+
     let types: [UTType]
 
     var body: some View {
@@ -19,11 +19,10 @@ struct DropTarget: View {
     }
 }
 
-struct DropTarget_Previews: PreviewProvider, DropDelegate {
-    
-    static var previews: some View {
-        DropTarget(delegate: Self(), types: [UTType.fileURL])
-    }
+#Preview {
+    DropTarget(delegate: PreviewDropDelegate(), types: [UTType.fileURL])
+}
 
+private struct PreviewDropDelegate: DropDelegate {
     func performDrop(info: DropInfo) -> Bool { false }
 }
