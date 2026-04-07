@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct HelloWorldPane: View {
-        
+
     var body: some View {
         Pane {
             VStack(spacing: 20) {
@@ -13,8 +13,6 @@ struct HelloWorldPane: View {
     }
 }
 
-struct HelloWorldPane_Previews: PreviewProvider {
-    static var previews: some View {
-        HelloWorldPane()
-    }
+#Preview {
+    HelloWorldPane()
 }

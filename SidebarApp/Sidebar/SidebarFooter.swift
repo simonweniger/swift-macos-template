@@ -5,10 +5,10 @@ struct SidebarFooter: View {
         VStack(spacing: 6) {
             Text("Sidebar Footer")
                 .fontWeight(.medium)
-                .foregroundColor(Color.white.opacity(0.6))
+                .foregroundStyle(Color.white.opacity(0.6))
             Text("You could put stuff here.")
                 .font(.footnote)
-                .foregroundColor(Color.black.opacity(0.4))
+                .foregroundStyle(Color.black.opacity(0.4))
         }
         .frame(height: 60)
         .frame(maxWidth: .infinity)
@@ -18,8 +18,6 @@ struct SidebarFooter: View {
     }
 }
 
-struct SidebarFooter_Previews: PreviewProvider {
-    static var previews: some View {
-        SidebarFooter()
-    }
+#Preview {
+    SidebarFooter()
 }

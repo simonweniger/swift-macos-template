@@ -1,14 +1,16 @@
 import SwiftUI
 
 struct AboutView: View {
-    
+
     let icon: NSImage
     let name: String
     let version: String
     let build: String
     let copyright: String
     let developerName: String
-    
+
+    @Environment(\.openWindow) private var openWindow
+
     var body: some View {
         VStack {
             HStack(alignment: .top) {
@@ -32,15 +34,13 @@ struct AboutView: View {
                     Spacer()
                     Text(copyright)
                         .font(.system(size: 10))
-                        .foregroundColor(.secondary)
+                        .foregroundStyle(.secondary)
                 }.padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 30))
             }
             HStack {
                 Spacer()
-                Button {
-                    AttributionsWindow.show()
-                } label: {
-                    Text("Attributions")
+                Button("Attributions") {
+                    openWindow(id: "attributions")
                 }
             }.padding()
                 .background(Color(.sRGB, white: 0.0, opacity: 0.05))

@@ -20,8 +20,6 @@ struct AttributionsView: View {
     }
 }
 
-struct AttributionsView_Previews: PreviewProvider {
-    static var previews: some View {
-        AttributionsView()
-    }
+#Preview {
+    AttributionsView()
 }

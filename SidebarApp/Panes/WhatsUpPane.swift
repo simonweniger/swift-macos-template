@@ -1,11 +1,11 @@
 import SwiftUI
 
 struct WhatsUpPane: View {
-    
+
     let names = ["Holly", "Josh", "Rhonda", "Ted"]
-    
+
     @State private var searchText = ""
-    
+
     var body: some View {
         Pane {
             VStack(spacing: 10) {
@@ -49,7 +49,7 @@ struct WhatsUpPane: View {
         }
         .navigationSubtitle("What's Up?")
     }
-    
+
     var searchResults: [String] {
         if searchText.isEmpty {
             return names
@@ -59,8 +59,6 @@ struct WhatsUpPane: View {
     }
 }
 
-struct WhatsUpPane_Previews: PreviewProvider {
-    static var previews: some View {
-        WhatsUpPane()
-    }
+#Preview {
+    WhatsUpPane()
 }
