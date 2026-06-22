@@ -5,10 +5,10 @@ struct SidebarFooter: View {
         VStack(spacing: 6) {
             Text("Sidebar Footer")
                 .fontWeight(.medium)
-                .foregroundStyle(Color.white.opacity(0.6))
+                .foregroundStyle(.secondary)
             Text("You could put stuff here.")
                 .font(.footnote)
-                .foregroundStyle(Color.black.opacity(0.4))
+                .foregroundStyle(.tertiary)
         }
         .frame(height: 60)
         .frame(maxWidth: .infinity)

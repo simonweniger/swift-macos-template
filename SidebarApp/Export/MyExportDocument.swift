@@ -8,7 +8,7 @@ struct MyDataEntry {
 
 struct MyExportDocument: FileDocument {
     
-    static var readableContentTypes = [UTType.tabSeparatedText]
+    static let readableContentTypes = [UTType.tabSeparatedText]
 
     let entries: [MyDataEntry]
 
