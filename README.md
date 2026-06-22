@@ -33,5 +33,6 @@ This template uses current best practices:
 - `MenuBarExtra` scene instead of manual `NSStatusItem`
 - SwiftUI `Window` scenes instead of `NSWindowController`
 - Modern `Tab` API instead of deprecated `tabItem()`
+- `dropDestination(for:)` instead of a manual `DropDelegate`/`NSItemProvider`
 - Swift 6 with strict concurrency checking
 - macOS 26 deployment target for Liquid Glass and latest APIs

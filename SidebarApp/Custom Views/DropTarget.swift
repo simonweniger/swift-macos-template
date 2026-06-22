@@ -1,28 +1,35 @@
 import SwiftUI
-import UniformTypeIdentifiers
 
+/// A reusable drop target that highlights while a drag hovers over it and
+/// reports any dropped file URLs via the `onDrop` closure.
+///
+/// Uses the modern SwiftUI `dropDestination(for:)` API, so there's no need
+/// for a custom `DropDelegate` or `NSItemProvider` plumbing.
 struct DropTarget: View {
 
-    let delegate: DropDelegate
+    /// Called with the dropped URLs. Return `true` if the drop was accepted.
+    let onDrop: (_ urls: [URL]) -> Bool
 
-    let types: [UTType]
+    @State private var isTargeted = false
 
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 8)
-                .fill(Color.black.opacity(0.2))
+                .fill(.black.opacity(0.2))
             RoundedRectangle(cornerRadius: 8)
-                .strokeBorder(Color.white.opacity(0.2), style: StrokeStyle(lineWidth: 2, dash: [8, 4], dashPhase: 0))
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .strokeBorder(
+                    .white.opacity(isTargeted ? 0.6 : 0.2),
+                    style: StrokeStyle(lineWidth: 2, dash: [8, 4])
+                )
         }
-        .onDrop(of: types, delegate: delegate)
+        .dropDestination(for: URL.self) { urls, _ in
+            onDrop(urls)
+        } isTargeted: { isTargeted = $0 }
     }
 }
 
 #Preview {
-    DropTarget(delegate: PreviewDropDelegate(), types: [UTType.fileURL])
-}
-
-private struct PreviewDropDelegate: DropDelegate {
-    func performDrop(info: DropInfo) -> Bool { false }
+    DropTarget { _ in true }
+        .frame(width: 220, height: 140)
+        .padding()
 }
